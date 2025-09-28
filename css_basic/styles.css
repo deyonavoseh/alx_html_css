@@ -1,26 +1,45 @@
-/* Make <body> a flex container in column direction */
+/* General look and feel */
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0; /* optional: remove default margins */
-  height: 100vh; /* take full viewport height */
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Make <main> a flex container in row direction */
-main {
-  display: flex;
-  flex-direction: row;
-  flex: auto; /* automatic height and width */
+/* Header styling */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
 }
 
-/* Article takes 2/3 of the width */
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* aligns logo + nav inline */
+  gap: 20px;
+  align-items: center;
+}
+
+header li {
+  cursor: pointer;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;   /* makes it bigger like a logo */
+  margin-right: 20px;
+}
+
+/* Article customization */
 article {
-  flex: 2;
-  overflow-y: auto; /* allow vertical scrolling */
+  padding: 20px;
+  background: #fff;
+  border-right: 1px solid #ccc;
 }
 
-/* Aside takes 1/3 of the width */
+/* Aside customization */
 aside {
-  flex: 1;
-  overflow-y: auto; /* allow vertical scrolling */
+  background: #fafafa;
+  padding: 20px;
+  border-left: 1px solid #ccc;
 }
